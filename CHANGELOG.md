@@ -19,9 +19,14 @@ Los cambios se agrupan en las siguientes categorías:
 
 ---
 
-## Sin publicar
+## [1.1.0] - 2026-06-28
+
+### Cambiado
+
+- Versionado de los endpoints de identidad a `/v1/identity`, `/v1/identity/name` y `/v1/identity/email` de acuerdo con ADR-004.
 
 ### Añadido
+
 
 - Nueva carpeta `.agent/skills` con información relevante para la IA.
 

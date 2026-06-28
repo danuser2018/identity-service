@@ -14,7 +14,7 @@ def test_get_health(client):
     assert response.json() == {"status": "UP"}
 
 def test_get_identity(client):
-    response = client.get("/identity")
+    response = client.get("/v1/identity")
     assert response.status_code == 200
     data = response.json()
     assert "name" in data
@@ -23,14 +23,14 @@ def test_get_identity(client):
     assert data["email"] == settings.USER_EMAIL
 
 def test_get_identity_name(client):
-    response = client.get("/identity/name")
+    response = client.get("/v1/identity/name")
     assert response.status_code == 200
     data = response.json()
     assert "name" in data
     assert data["name"] == settings.USER_NAME
 
 def test_get_identity_email(client):
-    response = client.get("/identity/email")
+    response = client.get("/v1/identity/email")
     assert response.status_code == 200
     data = response.json()
     assert "email" in data
