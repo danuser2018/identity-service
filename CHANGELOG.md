@@ -19,8 +19,15 @@ Los cambios se agrupan en las siguientes categorías:
 
 ---
 
-## [Sin publicar]
+## [1.0.0] - 2026-06-28
 
+### Añadido
+- Implementación de la versión MVP del microservicio `identity-service` en Python usando FastAPI.
+- Configuración externa de la identidad del usuario mediante variables de entorno `USER_NAME` y `USER_EMAIL` utilizando `pydantic-settings`.
+- Abstracción de persistencia mediante patrón Repositorio y Servicio desacoplados.
+- Endpoints REST de la API: `GET /identity`, `GET /identity/name`, `GET /identity/email` y `GET /health`.
+- Dockerización mediante `Dockerfile` y configuración con `docker-compose.yml`.
+- Conjunto de pruebas unitarias y de integración bajo la carpeta `tests/`.
 - Fichero `CONTRIBUTING.md` con el flujo de trabajo Trunk Based Development,
   convenciones de commits, guía de Pull Requests y buenas prácticas para
   desarrollo asistido con IA.
