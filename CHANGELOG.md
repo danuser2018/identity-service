@@ -22,6 +22,7 @@ Los cambios se agrupan en las siguientes categorías:
 ## [1.0.0] - 2026-06-28
 
 ### Añadido
+- Integración continua mediante GitHub Actions (`.github/workflows/test.yml`) para ejecutar las pruebas en cada push y pull request al tronco principal.
 - Implementación de la versión MVP del microservicio `identity-service` en Python usando FastAPI.
 - Configuración externa de la identidad del usuario mediante variables de entorno `USER_NAME` y `USER_EMAIL` utilizando `pydantic-settings`.
 - Abstracción de persistencia mediante patrón Repositorio y Servicio desacoplados.
