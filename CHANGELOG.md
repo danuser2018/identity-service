@@ -19,6 +19,13 @@ Los cambios se agrupan en las siguientes categorías:
 
 ---
 
+## Sin publicar
+
+### Corregido
+
+- Corregidas las discrepancias en `README.md` alineando los endpoints de identidad documentados y los ejemplos de comandos `curl` con el prefijo `/v1/` real de la implementación.
+- Documentación de las variables de entorno de configuración de red (`PORT` y `HOST`) en la sección correspondiente del `README.md`.
+
 ## [1.1.0] - 2026-06-28
 
 ### Cambiado
