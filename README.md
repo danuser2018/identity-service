@@ -105,6 +105,8 @@ Actualmente el servicio utiliza las siguientes variables:
 ```
 USER_NAME
 USER_EMAIL
+PORT
+HOST
 ```
 
 Ejemplo:
@@ -112,6 +114,8 @@ Ejemplo:
 ```
 USER_NAME=David
 USER_EMAIL=david@example.com
+PORT=8000
+HOST=0.0.0.0
 ```
 
 ---
@@ -121,7 +125,7 @@ USER_EMAIL=david@example.com
 ## Obtener toda la identidad
 
 ```
-GET /identity
+GET /v1/identity
 ```
 
 Respuesta:
@@ -138,7 +142,7 @@ Respuesta:
 ## Obtener el nombre
 
 ```
-GET /identity/name
+GET /v1/identity/name
 ```
 
 Respuesta:
@@ -154,7 +158,7 @@ Respuesta:
 ## Obtener el correo electrónico
 
 ```
-GET /identity/email
+GET /v1/identity/email
 ```
 
 Respuesta:
@@ -282,15 +286,15 @@ curl http://localhost:8000/health
 ```
 
 ```
-curl http://localhost:8000/identity
+curl http://localhost:8000/v1/identity
 ```
 
 ```
-curl http://localhost:8000/identity/name
+curl http://localhost:8000/v1/identity/name
 ```
 
 ```
-curl http://localhost:8000/identity/email
+curl http://localhost:8000/v1/identity/email
 ```
 
 La documentación OpenAPI estará disponible en:
